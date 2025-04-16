@@ -5,7 +5,13 @@ from transformers import pipeline
 import re
 
 # Load models
+import os
+from sentence_transformers import SentenceTransformer
+
+# Ensure model is loaded from cache
+os.environ["TRANSFORMERS_CACHE"] = "./cache"
 embedder = SentenceTransformer('all-MiniLM-L6-v2')
+
 qa_pipeline = pipeline("question-answering", model="deepset/roberta-base-squad2")
 
 st.set_page_config(page_title="Explain This PDF", layout="wide")
