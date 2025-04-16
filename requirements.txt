@@ -3,3 +3,7 @@ sentence-transformers
 transformers
 huggingface-hub
 PyMuPDF
+torch
+
+
+
