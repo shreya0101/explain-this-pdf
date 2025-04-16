@@ -1,4 +1,5 @@
 streamlit
-pymupdf
 sentence-transformers
 transformers
+huggingface-hub
+PyMuPDF
